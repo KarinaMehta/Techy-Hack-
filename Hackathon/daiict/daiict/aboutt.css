@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .bg-image {
+    width: 100%;
+    height: 600px;
+    background: url("https://wallpaperaccess.com/full/5589793.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+  }
+  
+  .container {
+    padding: 100px;
+    font-family: cursive;
+    font-size: larger;
+    background: linear-gradient(rgb(143, 39, 199), rgb(214, 150, 67), rgb(215, 201, 47));
+  }
+  
+  h1 {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  p {
+    color: white;
+  }
+  
+  @media (max-width: 500px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  .navbar {
+      display: inline-block;
+  
+  }
+  .nav-links{
+    flex: 1;
+    text-align: right;
+
+
+  } 
+  .nav-links ul li:hover{
+    /* color:yellow; */
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .nav-links ul li a:hover{
+    color: black;
+
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: -25px;
+    padding-left: 45px ;
+    /* justify-content: space-around; */
+  } 
+  .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+  } 

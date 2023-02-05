@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Video Gallery</title>
+<link rel="stylesheet" href="vidd.css" />
+</head>
+<body>
+<div class="container">
+<h1>Here are some helpful videos at the time of disasters...</h1>
+<div class="row">
+<div class="col">
+<div class="feature-img">
+<iframe width="500" height="315" src="https://www.youtube.com/embed/BLEPakj1YTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div> 
+</div>
+<div class="col">
+<div class="small-img-row">
+<div class="small-img">
+     <iframe width="510" height="345" src="https://www.youtube.com/embed/rV1iqRD9EKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<!-- <p>ABCD....</p> -->
+</div>  
+<div class="small-img-row">
+<div class="small-img">
+     <iframe width="510" height="345" src="https://www.youtube.com/embed/9j_StYqR_Pg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<!-- <p>ABCD....</p> -->
+</div>  
+<div class="small-img-row">
+<div class="small-img">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fuuSm2WzJZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<!-- <p>ABCD....</p> -->
+</div>  
+</div>   
+</div>
+</div>   
+<div class="video-player" id="videoPlayer">
+<video width="100%" controls autoplay id="myVideo">
+<source src="https://cdn.glitch.com/75df5bea-b4a8-4b78-8d90-5cb8ff3faabb%2Fproduction%20ID_4465352.mp4?v=1621706224807" type="video/mp4">
+</video>
+<img src="https://cdn.glitch.com/75df5bea-b4a8-4b78-8d90-5cb8ff3faabb%2Fclose.png?v=1621706499669" class="close-btn"
+     onclick="stopVideo()"> 
+</div>    
+<script>
+var videoPlayer = document.getElementById("videoPlayer");  
+var myVideo = document.getElementById("myVideo");  
+function stopVideo(){
+videoPlayer.style.display = "none";
+} 
+function playVideo(file){
+myVideo.src = file;
+videoPlayer.style.display ="block";
+} 
+  
+</script>    
+</body>
+</html>
